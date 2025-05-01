@@ -8,11 +8,10 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('background_site_1920x1080.png');
-    background-size: cover; /* <<< Aqui está a mudança */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
+    /* Removido: width: 100vw; */
     font-family: Arial, sans-serif;
 }
 
@@ -22,12 +21,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    position: absolute;
-    top: 60px;
+    position: relative;
+    top: 0;
     left: 0;
+    margin-top: 40px;
+    margin-bottom: 0; /* Remover espaço extra abaixo da logo */
     z-index: 10;
 }
 
+.buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px; /* Menor espaço entre logo e botões */
+    margin-bottom: 0; /* Remover espaço extra abaixo dos botões */
+    gap: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.about-container {
+    max-width: 600px;
+    margin: 32px auto 32px auto; /* Espaço menor acima e abaixo */
+    background: rgba(254, 236, 242, 0.4); /* Fundo translúcido */
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(94,44,18,0.18);
+    padding: 32px 24px;
+    text-align: center;
+    /* Remover qualquer border ou outline branco sólido */
+}
+
+@media (max-width: 700px) {
+    .logo {
+        max-width: 90vw;
+    }
+    .about-container {
+        max-width: 95vw;
+        padding: 16px 4vw;
+    }
+    .buttons-container {
+        gap: 12px;
+    }
+}
 .logo {
     max-width: 400px;
     height: auto;
@@ -38,10 +74,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 550px;
+    margin-top: 32px; /* Agora os botões ficam abaixo do logo */
     gap: 20px;
     position: relative;
     z-index: 10;
+}
+
+.about-container {
+    max-width: 600px;
+    margin: 40px auto 32px auto; /* Reduzido o margin-top de 180px para 40px e adicionado margin-bottom */
+    background: rgba(254, 236, 242, 0.4); /* CREME/BRANCO com opacidade */
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(94,44,18,0.18);
+    padding: 32px 24px;
+    text-align: center;
 }
 
 .image-button {
@@ -61,4 +107,38 @@ body {
 
 .image-button:hover {
     transform: scale(1.05);
+}
+
+.about-container h1 {
+    color: #ef5f95; /* ROSA */
+    margin-bottom: 32px;
+    margin-top: 10px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #8c4bff44; /* ROXO LOGO */
+}
+
+.card {
+    background: #f68ba9; /* ROSA CLARO */
+    border-left: 6px solid #ef5f95; /* ROSA */
+    border-radius: 10px;
+    padding: 24px 16px;
+    box-shadow: 0 2px 8px #8c4bff22; /* ROXO LOGO */
+}
+
+.card-header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8c4bff; /* ROXO LOGO */
+    letter-spacing: 2px;
+}
+
+.card-body {
+    margin-top: 18px;
+}
+
+.card-body p {
+    color: #5e2c12; /* MARRON */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
