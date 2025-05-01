@@ -12,7 +12,7 @@ body {
 
 .album-container {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 120px auto;
     background: rgba(254, 236, 242, 0.4); /* CREME/BRANCO com opacidade */
     border-radius: 18px;
     box-shadow: 0 8px 32px rgba(94,44,18,0.18);
@@ -90,4 +90,27 @@ body {
 
 .back-button-img:hover {
     transform: scale(1.08);
+}
+
+
+/* Site totalmente em branco */
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative; /* Alterado de absolute para relative */
+    top: 0;             /* Removido o deslocamento para baixo */
+    left: 0;
+    margin-top: 32px;   /* Espaço superior para afastar do topo */
+    margin-bottom: 24px;/* Espaço inferior para separar da galeria */
+    z-index: 10;
+}
+
+.logo {
+    max-width: 400px;   /* Reduzido para melhor proporção */
+    width: 90vw;
+    height: auto;
+    display: block;
+    margin-top: 80px;
 }
