@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background_site_1920x1080.png');
+    background-size: cover; /* <<< Aqui está a mudança */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+}
+
+/* Site totalmente em branco */
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    max-width: 400px;
+    height: auto;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 550px;
+    gap: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-button img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-button:hover {
+    transform: scale(1.05);
+}

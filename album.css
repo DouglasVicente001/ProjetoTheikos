@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #5e2c12;
+}
+
+.album-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(254, 236, 242, 0.4); /* CREME/BRANCO com opacidade */
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(94,44,18,0.18);
+    padding: 32px 24px;
+}
+
+.album-container h1 {
+    text-align: center;
+    color: #ef5f95; /* ROSA */
+    margin-bottom: 32px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #8c4bff44; /* ROXO LOGO */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #f68ba9; /* ROSA CLARO */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px #8c4bff22;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px #ef5f9577;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    border: 5px solid #8c4bff; /* ROXO LOGO */
+    background: #feecf2;
+}
+
+.back-button-container {
+    position: static;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.back-button-img {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: block;
+    margin: 0 auto;
+}
+
+.back-button-img:hover {
+    transform: scale(1.08);
+}

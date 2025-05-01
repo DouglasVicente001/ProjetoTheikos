@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #5e2c12;
+}
+
+.contact-container {
+    max-width: 400px;
+    margin: 80px auto;
+    background: rgba(254, 236, 242, 0.4); /* CREME/BRANCO com opacidade */
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(94,44,18,0.18);
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.contact-container h1 {
+    color: #ef5f95; /* ROSA */
+    margin-bottom: 32px;
+    margin-top: 10px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #8c4bff44; /* ROXO LOGO */
+}
+
+.card {
+    background: #f68ba9; /* ROSA CLARO */
+    border-left: 6px solid #ef5f95; /* ROSA */
+    border-radius: 10px;
+    padding: 24px 16px;
+    box-shadow: 0 2px 8px #8c4bff22; /* ROXO LOGO */
+}
+
+.card-header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8c4bff; /* ROXO LOGO */
+    letter-spacing: 2px;
+}
+
+.card-body {
+    margin-top: 18px;
+}
+
+.card-body p {
+    color: #5e2c12; /* MARRON */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    background: #ef5f95; /* ROSA */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    padding: 8px 18px;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px #8c4bff22;
+}
+
+.whatsapp-link:hover {
+    background: #8c4bff; /* ROXO LOGO */
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.back-button-container {
+    position: static;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.back-button-img {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: block;
+    margin: 0 auto;
+}
+
+.back-button-img:hover {
+    transform: scale(1.08);
+}
