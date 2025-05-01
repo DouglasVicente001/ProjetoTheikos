@@ -100,3 +100,23 @@ body {
 .back-button-img:hover {
     transform: scale(1.08);
 }
+/* Site totalmente em branco */
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative; /* Alterado de absolute para relative */
+    top: 0;             /* Removido o deslocamento para baixo */
+    left: 0;
+    margin-top: 32px;   /* Espaço superior para afastar do topo */
+    margin-bottom: 24px;/* Espaço inferior para separar da galeria */
+    z-index: 10;
+}
+
+.logo {
+    max-width: 400px;   /* Reduzido para melhor proporção */
+    width: 90vw;
+    height: auto;
+    display: block;
+}
